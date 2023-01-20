@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	<center><h2>Modification d'un animal</h2>
 	<form th:object="${animal}" th:action="@{/animal}" method="post">
 		<input type="hidden" th:field="*{id}" />
 		<div>

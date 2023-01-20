@@ -7,7 +7,8 @@
 </head>
 
 <body>
-	<h2>Liste des personnes
+	<center><h2>Liste des personnes<br><br>
+		
 		<table class="mainTable">
 			<thead>
 				<tr>
@@ -21,7 +22,7 @@
 					<td th:text="${person.getLastName}" />
 					<td th:text="${person.getFirstName}" />
 					<td th:text="${person.getAge}" />
-					<td th:text="${person.getAnimals}" />
+					<td th:text="${person.getAnimals.toString()}" />
 					<td><a th:href="@{'/person/' + ${person.id}}">📝</a></td>
 					<td><a th:href="@{'/person/delete/' + ${person.id}}"onclick="return confirm('Êtes-vous sûr ?')">🗑️</a></td>
 					
